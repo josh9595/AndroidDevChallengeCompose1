@@ -15,11 +15,11 @@
  */
 package com.example.androiddevchallenge.data
 
-data class Dogs (
+data class Dogs(
     val items: List<Dog>
 )
 
-data class Dog (
+data class Dog(
     val name: String,
     val age: Int,
     val gender: String,

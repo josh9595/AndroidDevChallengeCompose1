@@ -77,7 +77,10 @@ fun DogDetails(
             contentScale = ContentScale.Crop
         )
         Spacer(androidx.compose.ui.Modifier.height(16.dp))
-        Text(text = dog.name + ", " +dog.gender +" - Aged: " + dog.age.toString(), style = MaterialTheme.typography.h4)
+        Text(
+            text = dog.name + ", " + dog.gender + " - Aged: " + dog.age.toString(),
+            style = MaterialTheme.typography.h4
+        )
         Text(text = "Breed: " + dog.breed, style = MaterialTheme.typography.h5)
         Row() {
             Icon(

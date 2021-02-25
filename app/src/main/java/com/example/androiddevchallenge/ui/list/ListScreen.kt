@@ -46,7 +46,7 @@ fun ListScreen(
     val dogs = DogRepository().fetchDogs()
 
     Surface(color = MaterialTheme.colors.background) {
-        Scaffold (
+        Scaffold(
             topBar = {
                 val title = stringResource(id = R.string.app_name)
                 TopAppBar(
@@ -68,7 +68,8 @@ fun ListScreen(
                         item {
                             Text(
                                 text = "Find your furever friend!",
-                                style = typography.h4)
+                                style = typography.h4
+                            )
                             Spacer(Modifier.height(16.dp))
                         }
                         items(dogs.items) { dog ->
@@ -85,9 +86,11 @@ fun ListScreen(
 @Composable
 fun DogItem(dog: Dog, navigateTo: (Screen) -> Unit) {
     val typography = MaterialTheme.typography
-    Column(modifier = Modifier
-        .clickable(onClick = { navigateTo(Screen.Details(dog.name)) })
-        .fillMaxWidth()) {
+    Column(
+        modifier = Modifier
+            .clickable(onClick = { navigateTo(Screen.Details(dog.name)) })
+            .fillMaxWidth()
+    ) {
         val imageModifier = Modifier
             .heightIn(min = 180.dp)
             .fillMaxWidth()
@@ -104,7 +107,7 @@ fun DogItem(dog: Dog, navigateTo: (Screen) -> Unit) {
             text = dog.name,
             style = typography.h5
         )
-        Row(){
+        Row() {
             Icon(
                 imageVector = Icons.Filled.LocationOn,
                 contentDescription = "Located"
