@@ -19,7 +19,6 @@ import androidx.compose.animation.Crossfade
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.tooling.preview.Preview
 import com.example.androiddevchallenge.ui.details.DetailsScreen
 import com.example.androiddevchallenge.ui.list.ListScreen
 import com.example.androiddevchallenge.ui.theme.MyTheme
