@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package uk.co.josh9595.androiddevchallengecompose1.utils
 
 import android.os.Bundle
